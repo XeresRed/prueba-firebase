@@ -1,0 +1,14 @@
+
+<div *ngIf="userData$ | async as user">
+  <header>
+    <h1>Text</h1>
+    <div>
+      <p>{{user.email}}</p>
+      <img [src]="user.avatar" alt="avatar" class="avatar" srcset="">
+    </div>
+  </header>
+  <main>
+    Negro mira como funciona el asincronismo
+    <button (click)="logout()">Salir</button>
+  </main>
+</div>
